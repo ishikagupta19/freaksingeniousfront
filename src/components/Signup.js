@@ -31,7 +31,7 @@ const Signup = () => {
 
       const {name, email, phone, work, password, cpassword} = user;
 
-      const res = await fetch("/register", {
+      const res = await fetch("https://freaksingenious-api.onrender.com/register", {
         method:"POST",
         headers: {
           "Content-Type" : "application/json"
@@ -64,7 +64,7 @@ const Signup = () => {
           text:"Registeration Successfull"
         });
 
-        navigate(`/login`);
+        navigate(`https://freaksingenious-api.onrender.com/login`);
       }
   };
  

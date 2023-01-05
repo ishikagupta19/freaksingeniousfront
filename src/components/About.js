@@ -13,7 +13,7 @@ const About = () => {
 
   const callAboutPage = async () => {
     try{
-        const res = await fetch('/about', {
+        const res = await fetch('https://freaksingenious-api.onrender.com/about', {
           method: "GET",
           headers: {
             Accept: "application/json",
@@ -33,7 +33,7 @@ const About = () => {
 
     } catch (err) {
         console.log(err);
-        navigate('/login');
+        navigate('https://freaksingenious-api.onrender.com/login');
     }
   }
 

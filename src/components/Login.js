@@ -17,7 +17,7 @@ const Login = () => {
   const loginUser = async(e) =>{
     e.preventDefault();
     
-    const res = await fetch('/signin', {
+    const res = await fetch('https://freaksingenious-api.onrender.com/signin', {
       method:"POST",
       headers:{
         "Content-Type" : "application/json"
@@ -46,7 +46,7 @@ const Login = () => {
         icon: "success",
         text:"Login Successfull"
       });
-      navigate("/");
+      navigate("/https://freaksingenious-api.onrender.com");
     }
   }
 

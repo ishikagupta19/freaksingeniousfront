@@ -10,7 +10,7 @@ const Home = () => {
 
   const userHomePage = async () => {
     try{
-        const res = await fetch('/about', {
+        const res = await fetch('https://freaksingenious-api.onrender.com/about', {
           method: "GET",
           headers: {
             "Content-Type": "application/json"

@@ -11,7 +11,7 @@ const Logout = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('/logout', {
+        fetch('https://freaksingenious-api.onrender.com/logout', {
             method: "GET",
             headers: {
                 Accept: "application/json",
@@ -20,7 +20,7 @@ const Logout = () => {
               credentials: "include"
         }).then((res) => {
             dispatch({type:"USER", payload: false})
-            navigate('/login', {replace: true});
+            navigate('https://freaksingenious-api.onrender.com/login', {replace: true});
             if(!res.status === 200){
                 const error = new Error(res.error);
                 throw error;
